@@ -3,15 +3,15 @@ services:
   db:
     build: ./db
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
     restart: always
   web:
     build: ./web
     environment:
-      MYSQL_DATABASE: test
+      MYSQL_DATABASE: mydb
       MYSQL_USER: root
-      MYSQL_PASSWORD: password
+      MYSQL_PASSWORD: root
       MYSQL_HOST: db
     ports:
       - "5000:5000"

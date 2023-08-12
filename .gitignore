@@ -2,3 +2,5 @@ web/node_modules
 db/data/*
 
 !db/data/.gitkeep
+
+codes
